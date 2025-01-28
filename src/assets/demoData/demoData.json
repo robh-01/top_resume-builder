@@ -1,0 +1,73 @@
+{
+  "personal": {
+    "title": "Software Developer",
+    "firstName": "Roshan",
+    "lastName": "Bhusal",
+    "email": "roshan.bhusal911@gmail.com",
+    "phone": "+9779869449919",
+    "country": "Nepal",
+    "city": "Kathmandu",
+    "professionalSummary": "Curious and motivated Software Developer with 1+ years of hands-on experience in designing, developing, and deploying scalable software solutions. Proficient in full-stack development, with expertise in technologies such as JavaScript, Python, React, Node.js, and SQL. Skilled in Agile methodologies, version control (Git), and RESTful API integration. Passionate about solving complex problems through clean, efficient code and innovative thinking."
+  },
+  "employmentHistory": [
+    {
+      "jobTitle": "Software Engineer",
+      "employer": "Google",
+      "startDate": "2023/11",
+      "endDate": "2025/01",
+      "city": "US",
+      "responsibilities": [
+        "Developed REST APIs and implemented authentication protocols, such as OAuth. Its security expose data",
+        "Developed automated scripts to simplify common tasks and reduce manual effort",
+        "Developed and maintained software in multiple programming languages, such as Java, Python, and"
+      ]
+    },
+    {
+      "jobTitle": "Software Engineer",
+      "employer": "Google",
+      "startDate": "2023/11",
+      "endDate": "2025/01",
+      "country": "US",
+      "responsibilities": [
+        "Developed REST APIs and implemented authentication protocols, such as OAuth. Its security expose data",
+        "Developed automated scripts to simplify common tasks and reduce manual effort",
+        "Developed and maintained software in multiple programming languages, such as Java, Python, and"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Harvard University",
+      "degree": "Computer Science",
+      "startDate": "2023/11",
+      "endDate": "2025/01",
+      "country": "US",
+      "description": "Graduated with honors lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun"
+    },
+    {
+      "school": "Other University",
+      "degree": "Computer Science",
+      "startDate": "2023/11",
+      "endDate": "2025/01",
+      "country": "US",
+      "description": "Graduated with honors lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun"
+    }
+  ],
+  "contactLinks": [
+    {
+      "label": "LinkedIn",
+      "link": "https://www.linkedin.com/in/roshan-bhusal-b150a4256/"
+    },
+    {
+      "label": "X",
+      "link": "https://x.com/robh_01"
+    },
+    {
+      "label": "GitHub",
+      "link": "https://github.com/robh-01"
+    }
+  ],
+  "skills": [
+    "JavaScript", "CSS", "HTML5", "React", "Git"
+  ]
+}
