@@ -11,24 +11,26 @@
   },
   "employmentHistory": [
     {
+      "id": "adea0cdd-4c42-4bbd-a841-bd2765627e8e",
       "jobTitle": "Software Engineer",
       "employer": "Google",
-      "startDate": "2023/11",
-      "endDate": "2025/01",
+      "startDate": "2023-11-01",
+      "endDate": "2025-01-01",
       "city": "US",
-      "responsibilities": [
+      "description": [
         "Developed REST APIs and implemented authentication protocols, such as OAuth. Its security expose data",
         "Developed automated scripts to simplify common tasks and reduce manual effort",
         "Developed and maintained software in multiple programming languages, such as Java, Python, and"
       ]
     },
     {
-      "jobTitle": "Software Engineer",
-      "employer": "Google",
-      "startDate": "2023/11",
-      "endDate": "2025/01",
+      "id": "661cd80b-f21b-4bc3-a907-1d21bcda1339",
+      "jobTitle": "Web Designer",
+      "employer": "Figma",
+      "startDate": "2023-11-01",
+      "endDate": "2025-01-01",
       "country": "US",
-      "responsibilities": [
+      "description": [
         "Developed REST APIs and implemented authentication protocols, such as OAuth. Its security expose data",
         "Developed automated scripts to simplify common tasks and reduce manual effort",
         "Developed and maintained software in multiple programming languages, such as Java, Python, and"
@@ -67,7 +69,5 @@
       "link": "https://github.com/robh-01"
     }
   ],
-  "skills": [
-    "JavaScript", "CSS", "HTML5", "React", "Git"
-  ]
+  "skills": ["JavaScript", "CSS", "HTML5", "React", "Git"]
 }

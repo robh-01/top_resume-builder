@@ -1,13 +1,18 @@
-function Input({ inputTitle, value, onChange }) {
+function Input({ inputTitle, value, type, onChange }) {
   return (
     <>
-      <h2 className="input-title">{inputTitle + ": "}</h2>
-      <input className="input-field" value={value} onChange={onChange}></input>
+      <h2 className="input-label">{inputTitle + ": "}</h2>
+      <input
+        type={type}
+        className="input-field"
+        value={value}
+        onChange={onChange}
+      ></input>
     </>
   );
 }
 
-export default function Personal({...props}) {
+export default function Personal({ ...props }) {
   return (
     <>
       <section className="cv__section personal">
@@ -25,6 +30,7 @@ export default function Personal({...props}) {
         <Input
           inputTitle="First Name"
           value={props.cvData?.personal?.firstName ?? ""}
+          type="text"
           onChange={(e) => {
             props.changeCvData((draft) => {
               draft.personal = draft.personal || {};
@@ -32,11 +38,12 @@ export default function Personal({...props}) {
             });
           }}
         ></Input>
-        {/* <Input
+        <Input
           inputTitle="Last Name"
-          value={cvData?.personal?.lastName ?? ""}
+          value={props.cvData?.personal?.lastName ?? ""}
+          type="text"
           onChange={(e) => {
-            changeCvData((draft) => {
+            props.changeCvData((draft) => {
               draft.personal = draft.personal || {};
               draft.personal.lastName = e.target.value;
             });
@@ -44,14 +51,48 @@ export default function Personal({...props}) {
         ></Input>
         <Input
           inputTitle="Email"
-          value={cvData?.personal?.email ?? ""}
+          value={props.cvData?.personal?.email ?? ""}
+          type="email"
           onChange={(e) => {
-            changeCvData((draft) => {
+            props.changeCvData((draft) => {
               draft.personal = draft.personal || {};
               draft.personal.email = e.target.value;
             });
           }}
-        ></Input> */}
+        ></Input>
+        <Input
+          inputTitle="Phone"
+          value={props.cvData?.personal?.phone ?? ""}
+          type="tel"
+          onChange={(e) => {
+            props.changeCvData((draft) => {
+              draft.personal = draft.personal || {};
+              draft.personal.phone = e.target.value;
+            });
+          }}
+        ></Input>
+        <Input
+          inputTitle="Country"
+          value={props.cvData?.personal?.country ?? ""}
+          type="text"
+          onChange={(e) => {
+            props.changeCvData((draft) => {
+              draft.personal = draft.personal || {};
+              draft.personal.country = e.target.value;
+            });
+          }}
+        ></Input>
+        <Input
+          inputTitle="City"
+          value={props.cvData?.personal?.city ?? ""}
+          type="text"
+          onChange={(e) => {
+            props.changeCvData((draft) => {
+              draft.personal = draft.personal || {};
+              draft.personal.city = e.target.value;
+            });
+          }}
+        ></Input>
       </section>
     </>
   );
