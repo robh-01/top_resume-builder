@@ -17,11 +17,7 @@
       "startDate": "2023-11-01",
       "endDate": "2025-01-01",
       "city": "US",
-      "description": [
-        "Developed REST APIs and implemented authentication protocols, such as OAuth. Its security expose data",
-        "Developed automated scripts to simplify common tasks and reduce manual effort",
-        "Developed and maintained software in multiple programming languages, such as Java, Python, and"
-      ]
+      "description": "Developed REST APIs and implemented authentication protocols, such as OAuth. Its security expose data, developed automated scripts to simplify common tasks and reduce manual effort, developed and maintained software in multiple programming languages, such as Java, Python, and more"
     },
     {
       "id": "661cd80b-f21b-4bc3-a907-1d21bcda1339",
@@ -30,11 +26,7 @@
       "startDate": "2023-11-01",
       "endDate": "2025-01-01",
       "country": "US",
-      "description": [
-        "Developed REST APIs and implemented authentication protocols, such as OAuth. Its security expose data",
-        "Developed automated scripts to simplify common tasks and reduce manual effort",
-        "Developed and maintained software in multiple programming languages, such as Java, Python, and"
-      ]
+      "description": "Developed REST APIs and implemented authentication protocols, such as OAuth. Its security expose data, developed automated scripts to simplify common tasks and reduce manual effort, developed and maintained software in multiple programming languages, such as Java, Python, and more"
     }
   ],
   "education": [
