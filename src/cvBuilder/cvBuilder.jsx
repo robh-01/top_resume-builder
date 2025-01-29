@@ -1,6 +1,7 @@
 import Personal from "./cvBuilderPersonalDetails";
 import Professional from "./cvBuilderProfessionalSummary";
 import Employment from "./cvBuilderEmploymentHistory";
+import Education from "./cvBuilderEducation";
 
 export default function CvBuilder({ ...props }) {
   return (
@@ -10,6 +11,7 @@ export default function CvBuilder({ ...props }) {
           <Personal {...props}></Personal>
           <Professional {...props}></Professional>
           <Employment {...props}></Employment>
+          <Education {...props}></Education>
         </form>
       </div>
     </>

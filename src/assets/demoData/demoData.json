@@ -16,7 +16,7 @@
       "employer": "Google",
       "startDate": "2023-11-01",
       "endDate": "2025-01-01",
-      "city": "US",
+      "city": "Silicon Valley",
       "description": "Developed REST APIs and implemented authentication protocols, such as OAuth. Its security expose data, developed automated scripts to simplify common tasks and reduce manual effort, developed and maintained software in multiple programming languages, such as Java, Python, and more"
     },
     {
@@ -25,24 +25,26 @@
       "employer": "Figma",
       "startDate": "2023-11-01",
       "endDate": "2025-01-01",
-      "country": "US",
+      "city": "Silicon Valley",
       "description": "Developed REST APIs and implemented authentication protocols, such as OAuth. Its security expose data, developed automated scripts to simplify common tasks and reduce manual effort, developed and maintained software in multiple programming languages, such as Java, Python, and more"
     }
   ],
-  "education": [
+  "educationList": [
     {
+      "id": "aefa1825-5e2f-4a9c-be54-1787bb6813b6",
       "school": "Harvard University",
       "degree": "Computer Science",
-      "startDate": "2023/11",
-      "endDate": "2025/01",
+      "startDate": "2023-11-01",
+      "endDate": "2025-01-05",
       "country": "US",
       "description": "Graduated with honors lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun"
     },
     {
+      "id": "95313363-9e1c-4b8b-8b86-0bb34e20c3a9",
       "school": "Other University",
       "degree": "Computer Science",
-      "startDate": "2023/11",
-      "endDate": "2025/01",
+      "startDate": "2023-11-01",
+      "endDate": "2025-01-07",
       "country": "US",
       "description": "Graduated with honors lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun"
     }
