@@ -22,8 +22,15 @@ function EmploymentCard({ ...props }) {
       <div className="card card--employment">
         <div className="card__head">
           <span className="card__head__title">
-            {props.employment.jobTitle || "(Not Specified)"}
-            {props.employment.employer && ` at ${props.employment.employer}`}
+            {/* {props.employment.jobTitle || "(Not Specified)"}
+            {props.employment.employer && ` at ${props.employment.employer}`} */}
+            {props.employment.jobTitle
+              ? props.employment.employer
+                ? `${props.employment.jobTitle} at ${props.employment.employer}`
+                : props.employment.jobTitle
+              : props.employment.employer
+              ? props.employment.employer
+              : "(Not specified)"}
           </span>
           <span className="card__head__buttons">
             <button
