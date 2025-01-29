@@ -2,8 +2,8 @@
 import { useImmer } from "use-immer";
 import "./App.css";
 
-import Cv from "./cv";
-import CvBuilder from "./cvBuilder";
+import Cv from "./cv/cv";
+import CvBuilder from "./cvBuilder/cvBuilder";
 import demoData from "./assets/demoData/demoData.json";
 
 function App() {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import formattedTodayDate from "./todayDate";
+import formattedTodayDate from "../todayDate";
 
 function Input({ inputTitle, value, type = "text", onChange }) {
   return (
