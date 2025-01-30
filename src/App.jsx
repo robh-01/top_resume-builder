@@ -17,6 +17,13 @@ function App() {
       >
         Load Demo Data
       </button>
+      <button
+        onClick={() => {
+          setCvData({});
+        }}
+      >
+        Clear all fields
+      </button>
       <div className="cv-wrapper">
         <div className="container flex">
           <CvBuilder cvData={cvData} changeCvData={setCvData}></CvBuilder>
