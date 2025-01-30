@@ -45,9 +45,17 @@ function EducationItem({ education }) {
 function ContactLinkItem({ contactLink }) {
   return (
     <>
-      <a href={contactLink.link} target="_blank" className="contact-link">
+      <a href={contactLink.link} target="_blank" className="link contact-link">
         {contactLink.label}
       </a>
+    </>
+  );
+}
+
+function SkillItem({ skill }) {
+  return (
+    <>
+      <span className="skill__name">{skill.name}</span>
     </>
   );
 }
@@ -57,6 +65,7 @@ export default function CvPreview({ cvData }) {
   const employmentHistory = cvData.employmentHistory || [];
   const educationList = cvData.educationList || [];
   const contactLinks = cvData.contactLinks || [];
+  const skills = cvData.skills || [];
 
   return (
     <>
@@ -74,7 +83,7 @@ export default function CvPreview({ cvData }) {
             </div>
           </div>
           <div className="cv__body">
-            <section className="details">
+            <section className="details cv__body__section">
               <h2 className="section__title">Details</h2>
               <div className="section__content">
                 <p>
@@ -92,7 +101,7 @@ export default function CvPreview({ cvData }) {
                 <p>{personal.phone || ""}</p>
               </div>
             </section>
-            <section className="profile">
+            <section className="profile cv__body__section">
               <h2 className="section__title">profile</h2>
               <div className="section__content">
                 <p style={{ whiteSpace: "pre-line" }}>
@@ -100,7 +109,7 @@ export default function CvPreview({ cvData }) {
                 </p>
               </div>
             </section>
-            <section className="employment-items">
+            <section className="employment-items cv__body__section">
               <h2 className="section__title">employment history</h2>
               <div className="section__content">
                 {employmentHistory.map((employment) => {
@@ -113,7 +122,7 @@ export default function CvPreview({ cvData }) {
                 })}
               </div>
             </section>
-            <section className="education-items">
+            <section className="education-items cv__body__section">
               <h2 className="section__title">education</h2>
               <div className="section__content">
                 {educationList.map((education) => {
@@ -126,7 +135,7 @@ export default function CvPreview({ cvData }) {
                 })}
               </div>
             </section>
-            <section className="contact-links">
+            <section className="contact-links cv__body__section">
               <h2 className="section__title">links</h2>
               <div className="section__content">
                 {contactLinks.map((link) => {
@@ -136,6 +145,14 @@ export default function CvPreview({ cvData }) {
                       contactLink={link}
                     ></ContactLinkItem>
                   );
+                })}
+              </div>
+            </section>
+            <section className="skills cv__body__section">
+              <h2 className="section__title">skills</h2>
+              <div className="section__content">
+                {skills.map((skill) => {
+                  return <SkillItem key={skill.id} skill={skill}></SkillItem>;
                 })}
               </div>
             </section>
