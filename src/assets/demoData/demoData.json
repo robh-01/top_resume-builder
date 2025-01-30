@@ -51,14 +51,17 @@
   ],
   "contactLinks": [
     {
+      "id": "aefa1825-5e2f-4a9c-be54-1787bb6813b6",
       "label": "LinkedIn",
       "link": "https://www.linkedin.com/in/roshan-bhusal-b150a4256/"
     },
     {
+      "id": "95313363-9e1c-4b8b-8b86-0bb34e20c3a9",
       "label": "X",
       "link": "https://x.com/robh_01"
     },
     {
+      "id": "661cd80b-f21b-4bc3-a907-1d21bcda1339",
       "label": "GitHub",
       "link": "https://github.com/robh-01"
     }
