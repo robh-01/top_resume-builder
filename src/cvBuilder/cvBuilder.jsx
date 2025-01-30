@@ -8,7 +8,8 @@ import Skills from "./cvBuilderSkills";
 export default function CvBuilder({ ...props }) {
   return (
     <>
-      <div className="cv__builder">
+      <div className="cv-builder">
+        {props.children}
         <form>
           <Personal {...props}></Personal>
           <Professional {...props}></Professional>
