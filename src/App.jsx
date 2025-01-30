@@ -2,7 +2,7 @@
 import { useImmer } from "use-immer";
 import "./App.css";
 
-import Cv from "./cv/cv";
+import Cv from "./cv-preview/cv-preview";
 import CvBuilder from "./cvBuilder/cvBuilder";
 import demoData from "./assets/demoData/demoData.json";
 
