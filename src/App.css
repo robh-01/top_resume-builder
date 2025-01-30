@@ -49,7 +49,7 @@ h6 {
 /* utility classes */
 
 .container {
-  width: 90%;
+  width: 95%;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -59,11 +59,26 @@ h6 {
 }
 
 /* utility class end here */
+.cv-wrapper > .container {
+  align-items: flex-start;
+  gap: 16px;
+}
 
 .cv__builder,
-.cv__file {
+.cv-preview {
   width: 100%;
-  gap: 16px;
+}
+
+.cv-preview {
+  background-color: #656e83;
+  padding-block: 2.5em;
+}
+
+.cv-preview__file {
+  width: 80%;
+  background-color: white;
+  margin: 0 auto;
+  height: auto;
 }
 
 .input-label {

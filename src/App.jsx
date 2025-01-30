@@ -2,7 +2,7 @@
 import { useImmer } from "use-immer";
 import "./App.css";
 
-import Cv from "./cv-preview/cv-preview";
+import CvPreview from "./cv-preview/cv-preview";
 import CvBuilder from "./cvBuilder/cvBuilder";
 import demoData from "./assets/demoData/demoData.json";
 
@@ -27,7 +27,7 @@ function App() {
       <div className="cv-wrapper">
         <div className="container flex">
           <CvBuilder cvData={cvData} changeCvData={setCvData}></CvBuilder>
-          <Cv cvData={cvData}></Cv>
+          <CvPreview cvData={cvData}></CvPreview>
         </div>
       </div>
     </>
