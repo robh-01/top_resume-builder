@@ -42,10 +42,21 @@ function EducationItem({ education }) {
   );
 }
 
+function ContactLinkItem({ contactLink }) {
+  return (
+    <>
+      <a href={contactLink.link} target="_blank" className="contact-link">
+        {contactLink.label}
+      </a>
+    </>
+  );
+}
+
 export default function CvPreview({ cvData }) {
   const personal = cvData.personal || {};
   const employmentHistory = cvData.employmentHistory || [];
   const educationList = cvData.educationList || [];
+  const contactLinks = cvData.contactLinks || [];
 
   return (
     <>
@@ -89,7 +100,7 @@ export default function CvPreview({ cvData }) {
                 </p>
               </div>
             </section>
-            <section className="employment__items">
+            <section className="employment-items">
               <h2 className="section__title">employment history</h2>
               <div className="section__content">
                 {employmentHistory.map((employment) => {
@@ -102,7 +113,7 @@ export default function CvPreview({ cvData }) {
                 })}
               </div>
             </section>
-            <section className="education__items">
+            <section className="education-items">
               <h2 className="section__title">education</h2>
               <div className="section__content">
                 {educationList.map((education) => {
@@ -111,6 +122,19 @@ export default function CvPreview({ cvData }) {
                       key={education.id}
                       education={education}
                     ></EducationItem>
+                  );
+                })}
+              </div>
+            </section>
+            <section className="contact-links">
+              <h2 className="section__title">links</h2>
+              <div className="section__content">
+                {contactLinks.map((link) => {
+                  return (
+                    <ContactLinkItem
+                      key={link.id}
+                      contactLink={link}
+                    ></ContactLinkItem>
                   );
                 })}
               </div>
