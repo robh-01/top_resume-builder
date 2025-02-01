@@ -58,6 +58,18 @@ h6 {
   display: flex;
 }
 
+.add-Button {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding-block: 0.4em;
+  margin-top: 0.4em;
+}
+
+.add-Button:hover {
+  background-color: rgba(25, 143, 240, 0.178);
+}
+
 /* utility class end here */
 #root {
   font-family: "Lato", serif;
@@ -65,8 +77,34 @@ h6 {
 }
 
 .input-label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: rgb(99, 91, 91);
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: #d8dadd;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  min-height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: #d8dadd;
+  color: #333;
+  outline: none;
 }
 
 .link {
@@ -76,11 +114,13 @@ h6 {
 .cv-wrapper > .container {
   align-items: flex-start;
   gap: 16px;
+
+  min-height: 100vh;
 }
 
 .cv-builder,
 .cv-preview {
-  width: 100%;
+  width: 50%;
 }
 
 .cv-builder {
@@ -186,6 +226,61 @@ h6 {
   margin: 20px 0; /* Adjust spacing */
 }
 
+.cv__section {
+  margin-bottom: 0.8rem;
+}
+
+.cv__section__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cv__section__form-item {
+  width: 40%;
+}
+
+.cv__section__form-item.textarea {
+  width: 90%;
+}
+
+.card {
+  margin-top: 0.5rem;
+  border: 1px solid rgba(172, 166, 166, 0.5);
+  padding: 0.7em 0.6em;
+}
+
+.card:hover,
+.card:active {
+  & .card__head__title {
+    color: rgb(25, 145, 240);
+  }
+}
+
+.card__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__head__button {
+  background-color: transparent;
+  border: none;
+}
+
+.icon {
+  transition: fill 0.3s;
+}
+
+.icon.delete:hover path {
+  fill: red;
+}
+
+.icon.show-more:hover path {
+  fill: rgb(25, 145, 240);
+}
+
+/* cv-preview styles start here */
+
 .cv-preview {
   background-color: #656e83;
   padding-block: 2.5em;
@@ -196,6 +291,7 @@ h6 {
   background-color: white;
   margin: 0 auto;
   height: auto;
+  min-height: 800px;
 }
 
 .cv__header {
@@ -206,6 +302,7 @@ h6 {
 .cv__header__text {
   border-left: 5px solid white;
   padding-left: 1rem;
+  min-height: 100px;
 }
 
 .cv__body {
