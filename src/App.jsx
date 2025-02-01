@@ -13,20 +13,24 @@ function App() {
       <div className="cv-wrapper">
         <div className="container flex">
           <CvBuilder cvData={cvData} changeCvData={setCvData}>
-            <button
-              onClick={() => {
-                setCvData(demoData);
-              }}
-            >
-              Load Demo Data
-            </button>
-            <button
-              onClick={() => {
-                setCvData({});
-              }}
-            >
-              Clear all fields
-            </button>
+            <div className="data-btns">
+              <button
+                className="data-btn load-demo"
+                onClick={() => {
+                  setCvData(demoData);
+                }}
+              >
+                Load Demo Data
+              </button>
+              <button
+                className="data-btn clear-all"
+                onClick={() => {
+                  setCvData({});
+                }}
+              >
+                Clear all fields
+              </button>
+            </div>
           </CvBuilder>
           <CvPreview cvData={cvData}></CvPreview>
         </div>
