@@ -1,3 +1,5 @@
+/* global html2pdf */
+
 function EmploymentItem({ employment }) {
   const titleParts = [
     employment.jobTitle,
@@ -60,6 +62,32 @@ function SkillItem({ skill }) {
   );
 }
 
+function generatePDF() {
+  const pdfElement = document.querySelector(".cv-preview__file");
+
+  // Configure options
+  const options = {
+    filename: "document.pdf",
+    image: { type: "jpeg", quality: 0.98 }, // Image quality
+    html2canvas: {
+      scale: 2, // Higher scale = better resolution
+      useCORS: true, // Enable for cross-origin images
+      allowTaint: true, // Allow tainted images
+    },
+    jsPDF: {
+      unit: "mm",
+      format: "a4",
+      orientation: "portrait",
+    },
+    // Enable links and text selection
+    enableLinks: true,
+    margin: [15, 15, 15, 15], // Margins (top, right, bottom, left)
+  };
+
+  // Generate and download the PDF
+  html2pdf().set(options).from(pdfElement).save();
+}
+
 export default function CvPreview({ cvData }) {
   const personal = cvData.personal || {};
   const employmentHistory = cvData.employmentHistory || [];
@@ -70,6 +98,18 @@ export default function CvPreview({ cvData }) {
   return (
     <>
       <div className="cv-preview">
+        <button onClick={generatePDF} className="download-pdf-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#000000"
+          >
+            <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" />
+          </svg>{" "}
+          Download PDF
+        </button>
         <div className="cv-preview__file">
           <div className="cv__header">
             <div className="cv__header__img"></div>
