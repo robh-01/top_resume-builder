@@ -8,7 +8,7 @@ function EmploymentItem({ employment }) {
   const dateParts = [employment.startDate, employment.endDate].filter(Boolean);
 
   return (
-    <>
+    <div className="section__item">
       <h2 className="section__item__title">{titleParts.join(", ")}</h2>
       <h3 className="section__item__secondary__title">
         {dateParts.join(" - ")}
@@ -16,7 +16,7 @@ function EmploymentItem({ employment }) {
       <p className="section__item__content" style={{ whiteSpace: "pre-line" }}>
         {employment.description || ""}
       </p>
-    </>
+    </div>
   );
 }
 
