@@ -1,76 +1,76 @@
 {
   "personal": {
-    "title": "Software Developer",
-    "firstName": "Roshan",
-    "lastName": "Bhusal",
-    "email": "roshan.bhusal911@gmail.com",
-    "phone": "+9779869449919",
-    "country": "Nepal",
-    "city": "Kathmandu",
-    "professionalSummary": "Curious and motivated Software Developer with 1+ years of hands-on experience in designing, developing, and deploying scalable software solutions. Proficient in full-stack development, with expertise in technologies such as JavaScript, Python, React, Node.js, and SQL. Skilled in Agile methodologies, version control (Git), and RESTful API integration. Passionate about solving complex problems through clean, efficient code and innovative thinking."
+    "title": "Software Engineer",
+    "firstName": "Alex",
+    "lastName": "Smith",
+    "email": "alex.smith@example.com",
+    "phone": "+11234567890",
+    "country": "Canada",
+    "city": "Toronto",
+    "professionalSummary": "Passionate and detail-oriented Software Engineer with 2+ years of experience in developing and deploying robust applications. Skilled in full-stack development with expertise in JavaScript, Python, React, Node.js, and SQL. Proficient in Agile workflows, version control (Git), and API development. Dedicated to writing clean, efficient code and solving complex problems."
   },
   "employmentHistory": [
     {
-      "id": "adea0cdd-4c42-4bbd-a841-bd2765627e8e",
+      "id": "d1f2a3b4-c5d6-7e8f-9g0h-1i2j3k4l5m6n",
       "jobTitle": "Software Engineer",
-      "employer": "Google",
-      "startDate": "2023-11-01",
-      "endDate": "2025-01-01",
-      "city": "Silicon Valley",
-      "description": "Developed REST APIs and implemented authentication protocols, such as OAuth. Its security expose data, developed automated scripts to simplify common tasks and reduce manual effort, developed and maintained software in multiple programming languages, such as Java, Python, and more"
+      "employer": "TechCorp",
+      "startDate": "2022-08-01",
+      "endDate": "2024-06-01",
+      "city": "New York",
+      "description": "Developed REST APIs and implemented authentication protocols such as OAuth. Enhanced security for data exposure, automated tasks to reduce manual effort, and maintained software in multiple languages, including Java and Python."
     },
     {
-      "id": "661cd80b-f21b-4bc3-a907-1d21bcda1339",
-      "jobTitle": "Web Designer",
-      "employer": "Figma",
-      "startDate": "2023-11-01",
-      "endDate": "2025-01-01",
-      "city": "Silicon Valley",
-      "description": "Developed REST APIs and implemented authentication protocols, such as OAuth. Its security expose data, developed automated scripts to simplify common tasks and reduce manual effort, developed and maintained software in multiple programming languages, such as Java, Python, and more"
+      "id": "o7p8q9r0-s1t2-3u4v-5w6x-7y8z9a0b1c2d",
+      "jobTitle": "Frontend Developer",
+      "employer": "DesignHub",
+      "startDate": "2021-05-01",
+      "endDate": "2022-07-01",
+      "city": "San Francisco",
+      "description": "Designed and developed user-friendly interfaces with React and CSS. Improved website performance, collaborated with UX designers, and optimized responsive layouts for various devices."
     }
   ],
   "educationList": [
     {
-      "id": "aefa1825-5e2f-4a9c-be54-1787bb6813b6",
-      "school": "Harvard University",
+      "id": "d3e4f5g6-h7i8-9j0k-l1m2-3n4o5p6q7r8s",
+      "school": "University of Toronto",
       "degree": "Computer Science",
-      "startDate": "2023-11-01",
-      "endDate": "2025-01-05",
-      "country": "US",
-      "description": "Graduated with honors lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun"
+      "startDate": "2019-09-01",
+      "endDate": "2023-06-01",
+      "country": "Canada",
+      "description": "Graduated with honors. Specialized in software engineering, data structures, and web development."
     },
     {
-      "id": "95313363-9e1c-4b8b-8b86-0bb34e20c3a9",
-      "school": "Other University",
-      "degree": "Computer Science",
-      "startDate": "2023-11-01",
-      "endDate": "2025-01-07",
-      "country": "US",
-      "description": "Graduated with honors lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun lorem ipsun"
+      "id": "t9u0v1w2-x3y4-5z6a-7b8c-9d0e1f2g3h4i",
+      "school": "Tech Institute",
+      "degree": "Software Engineering",
+      "startDate": "2023-09-01",
+      "endDate": "2025-06-01",
+      "country": "Canada",
+      "description": "Focused on backend development, cloud computing, and API integrations."
     }
   ],
   "contactLinks": [
     {
-      "id": "aefa1825-5e2f-4a9c-be54-1787bb6813b6",
+      "id": "j5k6l7m8-n9o0-p1q2-r3s4-t5u6v7w8x9y0",
       "label": "LinkedIn",
       "link": "https://www.linkedin.com/in/roshan-bhusal-b150a4256/"
     },
     {
-      "id": "95313363-9e1c-4b8b-8b86-0bb34e20c3a9",
+      "id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
       "label": "X",
       "link": "https://x.com/robh_01"
     },
     {
-      "id": "661cd80b-f21b-4bc3-a907-1d21bcda1339",
+      "id": "q7r8s9t0-u1v2-w3x4-y5z6-a7b8c9d0e1f2",
       "label": "GitHub",
       "link": "https://github.com/robh-01"
     }
   ],
   "skills": [
-    { "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479", "name": "JavaScript" },
-    { "id": "c9bf9e57-1685-4c89-bafb-ff5af830be8a", "name": "CSS" },
-    { "id": "3c61a2a0-8a2b-4e5c-9d8f-6b0e7e1a2b3c", "name": "HTML5" },
-    { "id": "e4b7c7d0-1a2b-4c3d-8e9f-0a1b2c3d4e5f", "name": "React" },
-    { "id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p", "name": "Git" }
+    { "id": "g3h4i5j6-k7l8-m9n0-o1p2-q3r4s5t6u7v8", "name": "JavaScript" },
+    { "id": "w9x0y1z2-a3b4-c5d6-e7f8-g9h0i1j2k3l4", "name": "CSS" },
+    { "id": "m5n6o7p8-q9r0-s1t2-u3v4-w5x6y7z8a9b0", "name": "HTML5" },
+    { "id": "c1d2e3f4-g5h6-i7j8-k9l0-m1n2o3p4q5r6", "name": "React" },
+    { "id": "s7t8u9v0-w1x2-y3z4-a5b6-c7d8e9f0g1h2", "name": "Git" }
   ]
 }
